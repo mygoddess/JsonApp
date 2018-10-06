@@ -42,22 +42,20 @@
     <title>Hello World</title>
     <style type="text/css">
         .icon {
-            width: 60px;
+            width: 40px;
+        }
+        ul {
+            list-style: none;
         }
     </style>
 </head>
 
 <body>
-    <div class="app">
-        <!--h1>PhoneGap</h1>
-        <div id="deviceready" class="blink">
-            <p class="event listening">Connecting to Device!!!</p>
-            <p class="event received">Device is Ready!!!</p>
-        </div-->
+
         <div id="content">
 
         </div>
-    </div>
+
 
     <!--script src="http://172.30.92.217:8080/target/target-script-min.js#anonymous"></script-->
     <script type="text/javascript" src="cordova.js"></script>
@@ -69,18 +67,7 @@
 
 
     <script type="text/javascript">
-        console.log("Hello World !!! Phonegap debugging");
-        alert("Hello User!! ");
-
         var url = "http://medicine.psu.ac.th/20181004/api.php";		
-        /*$().ready(function(e) {
-            $.getJSON(url, function(result){
-                var listtext = "";
-                $.each(result, function(i, field){
-                    listtext .= "<li>" + name + icon + "</li>";
-                });
-            });
-        });*/
         
         function startFetch(){
             $("#status").html("Start Fetch Data");
@@ -104,24 +91,7 @@
         }
         $().ready(function(e) {
             alert("Start get Data");
-            $("#status").html("Start Fetch Data");
-            $.getJSON(url, function( data ) {
-            var items = [];
-            alert("Get Data From Medicine " + Object.keys(data).length);
-            $.each( data, function( key, val ) {
-                
-                if ( val != undefined && val['name'] != undefined){
-                    items.push( "<li><img src='http://medicine.psu.ac.th/20181004/" + val['icon'] + "' class='icon' /> " + val['name'] + "</li>" );
-                    
-                }
-            });
-            
-            $( "<ul/>", {
-                "class": "my-new-list",
-                "data-role":"listview", 
-                html: items.join( "" )
-            }).appendTo( "#content" );
-            });
+            startFetch();
         });
 
     </script>
