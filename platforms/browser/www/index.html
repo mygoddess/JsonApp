@@ -72,23 +72,30 @@
         function startFetch(){
             $("#status").html("Start Fetch Data");
             $.getJSON(url, function( data ) {
-            var items = [];
-            alert("Get Data From Medicine " + Object.keys(data).length);
-            $.each( data, function( key, val ) {
-                
-                if ( val != undefined && val['name'] != undefined){
-                    items.push( "<li><img src='http://medicine.psu.ac.th/20181004/" + val['icon'] + "' class='icon' /> " + val['name'] + "</li>" );
+                var items = [];
+                alert("Get Data From Medicine " + Object.keys(data).length);
+                $.each( data, function( key, val ) {
                     
-                }
+                    if ( val != undefined && val['name'] != undefined){
+                        items.push( "<li><img src='http://medicine.psu.ac.th/20181004/" + val['icon'] + "' class='icon' /> " + val['name'] + "</li>" );
+                        
+                    }
+                });
+                
+                $( "<ul/>", {
+                    "class": "my-new-list",
+                    "data-role":"listview", 
+                    html: items.join( "" )
+                }).appendTo( "#content" );
+            })  .done(function() {
+                console.log( "second success" );
+            })
+            .fail(function() {
+                console.log( "error" );
+            })
+            .always(function() {
+                console.log( "complete" );
             });
-            
-            $( "<ul/>", {
-                "class": "my-new-list",
-                "data-role":"listview", 
-                html: items.join( "" )
-            }).appendTo( "#content" );
-            });
-        }
         $().ready(function(e) {
             alert("Start get Data");
             startFetch();
