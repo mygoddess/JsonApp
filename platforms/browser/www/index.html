@@ -38,7 +38,7 @@
     -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: 'unsafe-inline' https://ssl.gstatic.com; style-src 'self' 'unsafe-inline'; media-src *" /> -->
 
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    <!--link rel="stylesheet" type="text/css" href="css/index.css" /-->
     <title>Hello World</title>
     <style type="text/css">
         .icon {
@@ -47,20 +47,30 @@
         ul {
             list-style: none;
         }
+        [data-role='page'] {
+            text-align: left;
+        }
+        body {
+            background-color: black;
+            color:white;
+        }
     </style>
 </head>
 
 <body>
-
+    <div data-role="page">
+        <h1>Json Getty</h1>
         <div id="content">
 
         </div>
+    </div>
+
 
 
     <!--script src="http://172.30.92.217:8080/target/target-script-min.js#anonymous"></script-->
     <script type="text/javascript" src="cordova.js"></script>
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <!--script type="text/javascript" src="js/index.js"></script-->
     <script type="text/javascript">
         //app.initialize();
     </script>
@@ -86,7 +96,7 @@
                     "class": "my-new-list",
                     "data-role":"listview", 
                     html: items.join( "" )
-                }).appendTo( "#content" );
+                }).appendTo( "body" );
             })  .done(function() {
                 console.log( "second success" );
             })
@@ -95,7 +105,8 @@
             })
             .always(function() {
                 console.log( "complete" );
-            });
+            });;
+        }
         $().ready(function(e) {
             alert("Start get Data");
             startFetch();
