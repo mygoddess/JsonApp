@@ -1,0 +1,49 @@
+{
+    "prepare_queue": {
+        "installed": [],
+        "uninstalled": []
+    },
+    "config_munge": {
+        "files": {}
+    },
+    "installed_plugins": {
+        "cordova-plugin-battery-status": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-camera": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-media-capture": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-device": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-dialogs": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-geolocation": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-globalization": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-inappbrowser": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-network-information": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-vibration": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        }
+    },
+    "dependent_plugins": {
+        "cordova-plugin-compat": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        },
+        "cordova-plugin-file": {
+            "PACKAGE_NAME": "com.casper.jsonapp"
+        }
+    }
+}
