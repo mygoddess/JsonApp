@@ -1,0 +1,17 @@
+{
+  "name": "com.casper.jsonapp",
+  "version": "1.0.0",
+  "displayName": "JsonApp",
+  "cordova": {
+    "platforms": [
+      "browser"
+    ],
+    "plugins": {
+      "cordova-plugin-file": {}
+    }
+  },
+  "dependencies": {
+    "cordova-android": "^7.0.0",
+    "cordova-browser": "~5.0.4"
+  }
+}
