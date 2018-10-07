@@ -10,16 +10,10 @@
     "cordova-plugin-battery-status": {
       "PACKAGE_NAME": "com.casper.jsonapp"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "com.casper.jsonapp"
-    },
     "cordova-plugin-device": {
       "PACKAGE_NAME": "com.casper.jsonapp"
     },
     "cordova-plugin-dialogs": {
-      "PACKAGE_NAME": "com.casper.jsonapp"
-    },
-    "cordova-plugin-geolocation": {
       "PACKAGE_NAME": "com.casper.jsonapp"
     },
     "cordova-plugin-globalization": {
@@ -37,16 +31,9 @@
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.casper.jsonapp"
     },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "com.casper.jsonapp"
-    },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.casper.jsonapp"
     }
   },
-  "dependent_plugins": {
-    "cordova-plugin-compat": {
-      "PACKAGE_NAME": "com.casper.jsonapp"
-    }
-  }
+  "dependent_plugins": {}
 }
